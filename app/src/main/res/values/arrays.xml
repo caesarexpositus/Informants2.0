@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_titles">
+        <item>by Structure</item>
+        <item>by Id</item>
+        <item> by Group</item>
+    </string-array>
+    <string-array name="sort_values">
+        <item>ST</item>
+        <item>ID</item>
+        <item>GR</item>
+    </string-array>
+
+</resources>

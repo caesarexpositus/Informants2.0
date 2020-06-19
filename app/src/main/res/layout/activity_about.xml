@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".profiles.DetailProfileActivity"
+    tools:ignore="MergeRootFrame">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/comandi_vocali"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="110dp"
+        android:text=" lista tutto
+     \n lista attivi
+     \n nuovo profilo
+     \n ordina per [id / codoce]
+     \n ordina per [struttura / nome]
+     \n ordina per gruppo
+     \n
+     \n apri [ / dettaglio / profilo] ...
+     \n apri percorso ...
+     \n
+     \n [dettaglio / profilo] ...
+     \n [percorso / indicazioni / mappa] ...
+     \n
+     \n cerca [tutto] ...
+     \n cerca struttura ...
+     \n cerca nome ...
+     \n cerca indirizzo ...
+     \n cerca citta ...
+     \n cerca orario ...
+     \n
+     \n annulla ricerca
+     \n
+     \n ---------------------------------------
+     \n 1) [ x / y / z] significa  x oppure y oppure z
+     \n 2) ... pronunciare la parola richiesta
+     \n 3) per i numeri pronunciarli singolarmente,
+     \n    cioè dire: nove due NON novantadue "
+        android:textSize="18sp"
+
+
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

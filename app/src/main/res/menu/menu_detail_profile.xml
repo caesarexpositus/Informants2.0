@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:onClick="onEditClick"
+        android:title="@string/edit"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:onClick="onDeleteClick"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_restore"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:onClick="onRevertClick"
+        android:title="@string/restore"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_save"
+        android:enabled="false"
+        android:icon="@android:drawable/ic_menu_save"
+        android:onClick="onSaveClick"
+        android:title="@string/save"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

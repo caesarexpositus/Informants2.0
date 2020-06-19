@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvFlagMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="@string/flag1_meaning"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <ImageView
+        android:id="@+id/ivFlag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:src="@drawable/ic_check_box_black_on"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvFlag2Mean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:text="@string/flag2_meaning"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/tvFlag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/tvTurnover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="4"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:text="@string/turnover"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/tvLyTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="5"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/tvCyTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+</TableRow>
+

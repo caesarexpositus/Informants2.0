@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/sett_list_header">
+
+        <SwitchPreferenceCompat
+            app:key="show"
+            app:summaryOff="all"
+            app:summaryOn="only actives"
+            app:title="List content" />
+
+        <ListPreference
+            app:defaultValue="ST"
+            app:entries="@array/sort_titles"
+            app:entryValues="@array/sort_values"
+            app:key="sortMode"
+            app:title="@string/sett_default_sort"
+            app:useSimpleSummaryProvider="true" />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Backup last execution">
+        <EditTextPreference
+            app:key="backup"
+            app:selectable="false"
+            app:summary="never"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="dataEdited"
+            app:selectable="false"
+            app:summary="never"
+            app:title="Data modified since last backup"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:key="backupNow"
+            app:summary=""
+            app:title="(run backup whenever you want) "
+            app:widgetLayout="@layout/backup_button" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

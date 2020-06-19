@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Informants</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="delete">Delete</string>
+    <string name="restore">Restore</string>
+    <string name="save">Save</string>
+    <string name="flag_meaning">Pet Corner</string>
+    <string name="lb_profile">Profile</string>
+    <string name="lb_id">ID</string>
+    <string name="lb_structure">Structure</string>
+    <string name="lb_address">Address</string>
+    <string name="lb_phone">Phone</string>
+    <string name="lb_time">Time</string>
+    <string name="lb_notes">Notes</string>
+    <string name="lb_reference">Reference</string>
+    <string name="city">City</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sort_by_id_structure">Sort by Id/structure</string>
+    <string name="search">Search</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+
+    <string name="sett_list_header">"List of Structures"</string>
+    <string name="sett_default_sort">Default order</string>
+    <string name="sett_sort_id">as per ID</string>
+    <string name="sett_sort_name">as per Structure Name</string>
+    <string name="sett_settings">Settings</string>
+    <string name="rating">Rating:</string>
+    <string name="flag1_meaning">Pet corner</string>
+    <string name="flag2_meaning">Rating</string>
+    <string name="phone">Phone</string>
+    <string name="open_profile">open Profile</string>
+    <string name="tap_here_to_un_delete">%1$s Tap here for this profile</string>
+    <string name="add_profile">Add profile</string>
+    <string name="show_active_only_all">Show Active/All</string>
+    <string name="sort_by_id_name">Sort by Id/Name</string>
+    <string name="edit">Edit</string>
+    <string name="turnover">Turnover:</string>
+    <string name="turnover_ly_cy">Turnover:</string>
+    <string name="turn_ly">last year </string>
+    <string name="turn_cy">this year </string>
+    <string name="open_maps">Open Google Maps</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="sett_about">About …</string>
+    <string name="title_activity_maps">Maps</string>
+    <string name="note_date">"Last Note: "</string>
+    <string name="manage_selection">Manage select</string>
+    <string name="group">Group:</string>
+    <string name="groups">Manage Groups</string>
+    <string name="show_groups">Show groups</string>
+    <string name="sett_sort_header">Order of list</string>
+    <string name="title_activity_settings_base">Settings</string>
+
+    <!-- Search Dialog strings -->
+    <string name="search_dlg_0">0-ALL FIELDS</string>
+    <string name="search_dlg_1">1-id</string>
+    <string name="search_dlg_2">2-structure</string>
+    <string name="search_dlg_3">3-address</string>
+    <string name="search_dlg_4">4-city</string>
+    <string name="search_dlg_5">5-work time</string>
+    <string name="search_dlg_6">6-phone</string>
+    <string name="search_dlg_7">7-reference</string>
+    <string name="search_dlg_8">8-pet corner</string>
+    <string name="search_dlg_9">9-rating</string>
+    <string name="search_dlg_10">10-ly Turnover</string>
+    <string name="search_dlg_11">11-cy Turnover</string>
+    <string name="search_dlg_12">12-group</string>
+    <string name="search_dlg_13">13-visited</string>
+    <string name="calendar_view">Calendar</string>
+    <string name="activate_voice_command">Activate voice command</string>
+    <string name="set_order">Set order…</string>
+    <string name="voice_command">Tell me…</string>
+    <string name="clear_all">Clear all</string>
+    <string name="group_a">Group: A</string>
+    <string name="exit">Exit</string>
+    <string name="comandi_vocali">Comandi Vocali</string>
+    <string name="info_for_disabled_profile">Info for \'disabled\' profile</string>
+    <string name="execute_backup_now">Execute backup NOW</string>
+    <string name="show_full_details">Show full details</string>
+    <string name="restar">Restar</string>
+    <string name="restart">Restart</string>
+
+    <!--  <string name="welcome_messages">Hello, %1$s! You have %2$d new messages.</string>
+                      getString(R.string.welcome_message, "Test", 0);
+    -->
+</resources>

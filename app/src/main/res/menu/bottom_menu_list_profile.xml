@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_input_add"
+        android:onClick="onAddProfileClick"
+        android:title="@string/add_profile"
+        android:tooltipText="searches full text"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort_white_24dp"
+        android:onClick="onSortClick"
+        android:title="@string/set_order"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/action_voice"
+        android:icon="@drawable/ic_mic_white_24dp"
+        android:onClick="onVoiceClick"
+        android:title="@string/voice_command"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+
+    <!-- Settings, should always be in the overflow
+    <item
+        android:_id="@+_id/action_settings"
+        android:onClick="onSettingsClick"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/sett_settings"
+        app:showAsAction="never" />-->
+</menu>

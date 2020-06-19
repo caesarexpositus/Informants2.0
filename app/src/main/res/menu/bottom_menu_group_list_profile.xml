@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_clear_groups"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:onClick="onClearGroupsClick"
+        android:title="@string/clear_all"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_assign_group"
+        android:icon="@drawable/ic_checked_list_add_white_24dp"
+        android:onClick="onAssignGroupClick"
+        android:title="@string/group_a"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_restart_group"
+        android:icon="@drawable/ic_checked_list_reset_white_24dp"
+        android:onClick="onRestartGroupClick"
+        android:title="@string/restart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_groups"
+        android:icon="@drawable/ic_save_white_24dp"
+        android:onClick="onSaveGroupsClick"
+        android:title="@string/save"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_exit"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        android:onClick="onExitGroupsClick"
+        android:title="@string/exit"
+        app:showAsAction="always" />
+
+</menu>

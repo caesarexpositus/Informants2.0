@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/etNoteDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:inputType="datetime"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="3"
+            android:background="@null"
+            android:clickable="false"
+            android:inputType="textMultiLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_column="2"
+            android:src="@android:drawable/ic_delete" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:onClick="onSearchClick"
+        android:title="@string/search"
+        android:tooltipText="search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_group"
+        android:icon="@drawable/ic_checked_list_black_24dp"
+
+        android:onClick="onGroupClick"
+        android:title="@string/groups"
+        android:tooltipText="Assign Group code"
+        app:showAsAction="collapseActionView" />
+
+    <!--
+    <item
+        android:_id="@+_id/action_sort"
+        android:icon="@drawable/ic_sort_by_alpha_withe"
+        android:onClick="executeSort"
+        android:title="@string/sort_by_id_structure"
+        android:tooltipText="Flip sorting mode Id::a_structure"
+        app:showAsAction="ifRoom|collapseActionView" />
+-->
+
+    <item
+        android:id="@+id/action_show"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:onClick="executeShow"
+        android:title="@string/show_active_only_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:onClick="onSettingsClick"
+        android:title="@string/sett_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:onClick="onAboutClick"
+        android:title="@string/sett_about"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit_app"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:onClick="onExitAppClick"
+        android:title="Close and Exit "
+        app:showAsAction="never" />
+</menu>

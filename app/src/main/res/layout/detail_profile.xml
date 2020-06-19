@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:stretchColumns="1">
+
+    <!--  <TableRow>
+          <TextView xmlns:tools="http://schemas.android.com/tools"
+             android:_id="@+_id/tvHeader"
+             style="?android:attr/textAppearanceLarge"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_column="0"
+             android:text="Header"
+             android:textIsSelectable="true"
+             tools:context=".DetailProfileFragment" />
+     </TableRow>
+     -->
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:paddingTop="5dp"
+            android:text="@string/lb_profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivInfoId"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_column="1"
+            android:layout_gravity="end"
+            android:contentDescription="@string/info_for_disabled_profile"
+            android:onClick="onUnDeleteClick"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:labelFor="@id/tvId"
+            android:text="@string/lb_id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TableLayout
+            android:layout_span="2"
+            android:orientation="horizontal"
+            android:stretchColumns="3">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorLightGray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:labelFor="@+id/etGroup"
+                    android:text="@string/group"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/etGroup"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:inputType="textCapCharacters"
+                    android:maxLength="5"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/tvFill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etStructure"
+            android:text="@string/lb_structure"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etStructure"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:autofillHints="Ambulatory Veterinarian"
+            android:inputType="textMultiLine"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etAddress"
+            android:text="@string/lb_address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:inputType="textMultiLine"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etCity"
+            android:text="@string/city"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:inputType="textMultiLine"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etTime"
+            android:text="@string/lb_time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:inputType="textMultiLine"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etPhone"
+            android:text="@string/phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:inputType="phone"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+
+            android:labelFor="@id/etEmail"
+            android:paddingEnd="5dp"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="normal" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+
+            android:labelFor="@id/etDelivery"
+            android:paddingEnd="5dp"
+            android:text="Delivery"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="normal" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+
+            android:labelFor="@id/etCuPec"
+            android:paddingEnd="5dp"
+            android:text="Cu/Pec"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/etCuPec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="normal" />
+    </TableRow>
+
+    <TableRow>
+
+        <TableLayout
+            android:layout_span="2"
+            android:orientation="horizontal"
+            android:stretchColumns="4">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:labelFor="@+id/etFlag1"
+                    android:text="@string/flag1_meaning"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <CheckBox
+                    android:id="@+id/ckFlag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:labelFor="@+id/etFlag2"
+                    android:text="@string/flag2_meaning"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/etFlag2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:paddingTop="0dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/tvFiller"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_weight="1" />
+
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:text="@string/turnover_ly_cy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TableLayout
+            android:layout_column="1"
+            android:orientation="horizontal">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:labelFor="@+id/etLyTurn"
+                    android:text="@string/turn_ly"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/etLyTurn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:inputType="number"
+                    android:paddingTop="0dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:labelFor="@+id/etCyTurn"
+                    android:text="@string/turn_cy"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <EditText
+                    android:id="@+id/etCyTurn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:paddingTop="0dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:labelFor="@+id/etReference"
+            android:text="@string/lb_reference"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/etReference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:paddingTop="0dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+
+            android:labelFor="@id/ivCalendar"
+            android:text="@string/lb_notes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:contentDescription="@string/calendar_view"
+            android:onClick="clickDataPicker"
+            android:src="@drawable/ic_calendar" />
+    </TableRow>
+
+    <TableRow>
+
+        <include
+            android:id="@+id/rowNoteNew"
+            layout="@layout/detail_profile_note_row_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+
+        <include
+            android:id="@+id/rowNote1"
+            layout="@layout/detail_profile_note_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow>
+
+        <include
+            android:id="@+id/rowNote2"
+            layout="@layout/detail_profile_note_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow>
+
+        <include
+            android:id="@+id/rowNote3"
+            layout="@layout/detail_profile_note_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow>
+
+        <include
+            android:id="@+id/rowNote4"
+            layout="@layout/detail_profile_note_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:visibility="invisible" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvFillerForBottomBar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="" />
+
+    </TableRow>
+</TableLayout>
+
+
