@@ -9,18 +9,30 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.text.isDigitsOnly
 import androidx.preference.PreferenceManager
 import com.itce.informants2.R
+import com.itce.informants2.helper.Data.Companion.TODAY_DATE
+import com.itce.informants2.helper.Data.Companion.TODAY_day
+import com.itce.informants2.helper.Data.Companion.TODAY_month
+import com.itce.informants2.helper.Data.Companion.TODAY_year
 import kotlinx.android.synthetic.main.body_for_popup_with_edit.view.*
+import java.time.LocalDate
 
 class Utility {
     companion object {
 
         lateinit var context: Activity
 
+        fun getTodayDateTime() {
+            TODAY_DATE = LocalDate.now()
+            TODAY_year = TODAY_DATE.year
+            TODAY_month = TODAY_DATE.monthValue
+            TODAY_day = TODAY_DATE.dayOfMonth
+        }
+
         enum class Answer {
             YES, NO                          // may be also -> , ERROR
         }
-        private var choise: Answer = Answer.NO
 
+        private var choise: Answer = Answer.NO
         fun infoDialog(
             activity: Activity,
             inMessage: String,
@@ -50,7 +62,6 @@ class Utility {
             alert.show()
         }
 
-
         private fun userChoise(choosen: Answer) {
             choise = choosen
             if (choosen === Answer.YES)
@@ -62,9 +73,7 @@ class Utility {
                         .show()
         }
 
-
         var EDIT_TEXT_RETURN = ""
-
         fun popUpWithEdit(
             activity: Activity,
             title: String,

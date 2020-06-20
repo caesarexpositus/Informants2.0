@@ -9,6 +9,7 @@ import android.widget.EditText
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.itce.informants2.R
+import com.itce.informants2.helper.Data.Companion.TODAY_year
 import com.itce.informants2.helper.DataProfiles
 import com.itce.informants2.helper.DataProfiles.Companion.ARG_ITEM_ID
 import com.itce.informants2.helper.DataProfiles.Companion.LIST_PROFILE_ITEM_MAP
@@ -79,13 +80,14 @@ class DetailProfileFragment : Fragment() {
                 // Set Row for new Note
                 ivCalendar.isEnabled = false
 
-                var sVisit = ""
+                var sNoteDate = ""
                 var sNote = ""
+
                 if (checkForDigitsOnly(it.k_group)) {
-                    sVisit = LocalDate.ofYearDay(2020, it.k_group.toInt()).toString()
+                    sNoteDate = LocalDate.ofYearDay(TODAY_year, it.k_group.toInt()).toString()
                     sNote = "planned to visit"
                 }
-                setTextDisabled(et = rowNoteNew.etNoteDate, source = sVisit)
+                setTextDisabled(et = rowNoteNew.etNoteDate, source = sNoteDate)
                 setTextDisabled(et = rowNoteNew.etNote, source = sNote)
 
 
@@ -113,10 +115,11 @@ class DetailProfileFragment : Fragment() {
                                 )
                                 setTextDisabled(et = etNoteDate, source = note.date)
                                 setTextDisabled(et = etNote, source = note.note)
+                                ivDelete.isEnabled = false
                                 ivDelete.setOnClickListener {
                                     setNoteOperation(rowNote1, 1)
                                 }
-                                ivDelete.isEnabled = false
+
                             }
                         }
                         2 -> {
@@ -124,10 +127,11 @@ class DetailProfileFragment : Fragment() {
                                 isVisible = true
                                 setTextDisabled(et = etNoteDate, source = note.date)
                                 setTextDisabled(et = etNote, source = note.note)
+                                ivDelete.isEnabled = false
                                 ivDelete.setOnClickListener {
                                     setNoteOperation(rowNote2, 2)
-                                    ivDelete.isEnabled = false
                                 }
+
                             }
                         }
                         3 -> {
@@ -135,9 +139,9 @@ class DetailProfileFragment : Fragment() {
                                 isVisible = true
                                 setTextDisabled(et = etNoteDate, source = note.date)
                                 setTextDisabled(et = etNote, source = note.note)
+                                ivDelete.isEnabled = false
                                 ivDelete.setOnClickListener {
                                     setNoteOperation(rowNote3, 3)
-                                    ivDelete.isEnabled = false
                                 }
                             }
                         }
@@ -146,9 +150,10 @@ class DetailProfileFragment : Fragment() {
                                 isVisible = true
                                 setTextDisabled(et = etNoteDate, source = note.date)
                                 setTextDisabled(et = etNote, source = note.note)
+                                ivDelete.isEnabled = false
                                 ivDelete.setOnClickListener {
                                     setNoteOperation(rowNote4, 4)
-                                    ivDelete.isEnabled = false
+
                                 }
                             }
                         }

@@ -6,8 +6,6 @@ import android.os.Environment
 import android.text.format.DateFormat
 import android.widget.Toast
 import androidx.preference.PreferenceManager
-import com.itce.informants2.helper.DataProfiles.Companion.ProfileItem
-import com.itce.informants2.helper.DataProfiles.Companion.Note
 import com.itce.informants2.helper.Data.Companion.DATA_EDITED
 import com.itce.informants2.helper.Data.Companion.LAST_BACKUP
 import com.itce.informants2.helper.Data.Companion.LAST_EDIT
@@ -15,13 +13,16 @@ import com.itce.informants2.helper.DataProfiles.Companion.ARE_PROFILES_LOADED
 import com.itce.informants2.helper.DataProfiles.Companion.LAST_PROFILE_ID
 import com.itce.informants2.helper.DataProfiles.Companion.LIST_PROFILE_ITEMS
 import com.itce.informants2.helper.DataProfiles.Companion.NOTES
+import com.itce.informants2.helper.DataProfiles.Companion.Note
 import com.itce.informants2.helper.DataProfiles.Companion.PROFILE_FILE_LINES
 import com.itce.informants2.helper.DataProfiles.Companion.PROFILE_PATH_FILE
 import com.itce.informants2.helper.DataProfiles.Companion.PROFILE_SORT_MODE
+import com.itce.informants2.helper.DataProfiles.Companion.ProfileItem
 import com.itce.informants2.helper.DataProfiles.Companion.SETTINGS_SHOW_PROFILE_ACTIVE
 import com.itce.informants2.helper.Utility.Companion.checkBackup
 import com.itce.informants2.helper.Utility.Companion.checkForDigitsOnly
 import com.itce.informants2.helper.Utility.Companion.context
+import com.itce.informants2.helper.Utility.Companion.getTodayDateTime
 import com.itce.informants2.helper.Utility.Companion.showToast
 import java.io.File
 import java.util.*
@@ -30,7 +31,7 @@ import kotlin.math.abs
 class UtilityProfiles {
     companion object {
 
-        private const val PROFILES_FILE = "Anagrafica.txt"
+        private const val PROFILES_FILE = "Profiles.txt"
         private var message = ""
 
         fun setApplicationSettings(activity: Activity) {
@@ -48,6 +49,8 @@ class UtilityProfiles {
             SETTINGS_SHOW_PROFILE_ACTIVE = sharedPref.getBoolean("show", false)
             LAST_BACKUP = sharedPref.getString("backup", "2020-01-01 00:00:00").toString()
             DATA_EDITED = sharedPref.getString("dataEdited", "NO").toString()
+
+            getTodayDateTime()
         }
 
 

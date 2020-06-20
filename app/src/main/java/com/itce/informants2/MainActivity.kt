@@ -15,8 +15,8 @@ import com.itce.informants2.helper.Data.Companion.APPLICATION_EXIT
 import com.itce.informants2.helper.DataProfiles
 import com.itce.informants2.helper.DataProfiles.Companion.ARE_PROFILES_LOADED
 import com.itce.informants2.helper.DataProfiles.Companion.PROFILE_PATH_FILE
-import com.itce.informants2.helper.UtilityProfiles
 import com.itce.informants2.helper.Utility.Companion.showToast
+import com.itce.informants2.helper.UtilityProfiles
 import com.itce.informants2.products.ListProductActivityUc
 import com.itce.informants2.profiles.ListProfileActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -206,7 +206,6 @@ class MainActivity : AppCompatActivity() {
 
                     val itemValue = listView.getItemAtPosition(index) as String
 
-                    //   if (file.name == UtilityProfiles.PROFILES_FILE) {
                     inStream =
                         contentResolver.openInputStream(documentFileByName[index].uri)!!
 
